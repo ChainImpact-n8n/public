@@ -1,4 +1,4 @@
-volumes:
+Rvolumes:
   traefik_data:
   pgdata:
   n8n_data:
@@ -24,7 +24,7 @@ x-shared: &shared
     - EXECUTIONS_MODE=queue
     - QUEUE_BULL_REDIS_HOST=redis
     - QUEUE_BULL_REDIS_PORT=6379
-    - N8N_ENCRYPTION_KEY=oz/+xZivhEvzbpGB2rexNGrNIydGe2Yb
+    - N8N_ENCRYPTION_KEY=ENCRYPT_KEY
     - EXECUTIONS_DATA_PRUNE=false
     - QUEUE_HEALTH_CHECK_ACTIVE=true
     - OFFLOAD_MANUAL_EXECUTIONS_TO_WORKERS=true
